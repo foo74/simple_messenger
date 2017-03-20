@@ -1,3 +1,36 @@
-make client
+0. Build the client and server.
+tar -xvzf simple_messenger_1-0.tar.gz 
+cd simple_messenger_1-0
+make
 
-make server
+1. Start server in one terminal window.
+./server
+
+2. Start client in the other terminal window.
+./client localhost
+
+3. Type in client, and the server should print what it receives to stdout.
+
+4. Press control-c to exit client and server.
+
+
+
+Example
+
+TERMINAL 1
+
+tar -xvzf simple_messenger_1-0.tar.gz 
+cd simple_messenger_1-0/
+make
+./server
+hello world
+^C
+
+
+
+TERMINAL 2
+
+cd simple_messenger_1-0/
+./client localhost
+hello world
+^C
